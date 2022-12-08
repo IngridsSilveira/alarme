@@ -1,12 +1,12 @@
 /*-------------------------DATA----------------------*/
 const div_data = document.getElementById("data")
 const data = new Date()
+let doze = data.getMonth()
+doze = 12 
 const dia = data.getDate() < 10? "0" + data.getDate():data.getDate()
-const mes = data.getMonth() < 10? "0" + data.getMonth():data.getMonth()
+const mes = doze < 10? "0" + doze:doze
 const dataFormatada = dia + "/" + mes + "/" + data.getFullYear()
 div_data.innerHTML = dataFormatada
-
-console.log(data.getMonth())
 
 /*-------------------------RELOGIO-------------------*/
 const relogio = document.getElementById("relogio")

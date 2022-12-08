@@ -1,0 +1,123 @@
+* {
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #444;
+}
+
+.titulo {
+  color: #fff;
+  font-family: "Sono", sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  letter-spacing: -2px;
+  margin-bottom: 5px;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 500px;
+  height: auto;
+  background-color: rgba(42, 148, 214, 0.4352941176);
+  border: 3px solid rgba(255, 255, 255, 0.431372549);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.data {
+  margin-bottom: 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f4f4f4;
+}
+
+.relogio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 50px;
+  color: #0f0;
+  background-color: #000;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.label_hora {
+  color: #fff;
+  font-family: "Sono", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.label_desc {
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+}
+
+.input {
+  border: 1px solid #000;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.btn_ativar {
+  color: #fff;
+  background-color: #39ab05;
+}
+
+.btn_parar {
+  color: #fff;
+  background-color: #ff8000;
+}
+
+.alarme {
+  background-color: #f00 !important;
+}
+
+footer {
+  margin-top: 20px;
+}
+
+.footer_texto {
+  color: #fff;
+  font-family: "Sono", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.footer_texto a {
+  color: #ff8000;
+}
+
+/*# sourceMappingURL=timer.css.map */

@@ -1,0 +1,121 @@
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin branco {
+    color: #fff;
+}
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    @include flex-center();
+    flex-direction: column;
+    height: 100vh;
+    background-color: #444;
+}
+.titulo {
+    @include branco();
+    font: {
+        family: 'Sono', sans-serif;
+        weight: bold;
+        size: 2.5rem;
+    };
+    letter-spacing: -2px;
+    margin-bottom: 5px;
+}
+.timer {
+    @include flex-center();
+    flex-direction: column;
+    width: 500px;
+    height: auto;
+    background-color: #2a94d66f;
+    border: 3px solid #ffffff6e;
+    padding: 10px;
+    border-radius: 5px;
+}
+.data {
+    margin-bottom: 10px;
+    font: {
+        family: 'Courier New', Courier, monospace;
+        size: 1.5rem;
+        weight: bold;
+    };
+    color: #f4f4f4;
+}
+.relogio {
+    @include flex-center();
+    width: 180px;
+    height: 50px;
+    color: #0f0;
+    background-color: #000;
+    font: {
+        family: 'Courier New', Courier, monospace;
+        size: 1.5rem;
+    };
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.label_hora {
+    @include branco();
+    font: {
+        family: 'Sono', sans-serif;
+        weight: bold;
+        size: 2rem;
+    }
+    margin-bottom: 8px;
+}
+.label_desc {
+    @include branco();
+    font: {
+        family: sans-serif;
+        size: 1.2rem;
+    }
+}
+.input {
+    border: 1px solid #000;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.btn_ativar {
+    @include branco();
+    background-color: #39ab05;
+}
+.btn_parar {
+    @include branco();
+    background-color: #ff8000;
+}
+.alarme {
+    background-color: #f00 !important;
+}
+footer {
+    margin-top: 20px;
+}
+.footer_texto {
+    @include branco();
+    font: {
+        family: 'Sono', sans-serif;
+        weight: bold;
+        size: 1.5rem;
+    }
+    a {
+        color: #ff8000;
+    }
+}
